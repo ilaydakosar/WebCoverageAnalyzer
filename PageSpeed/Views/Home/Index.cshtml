@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "URL Analizi";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Home" asp-action="Analyze" method="post">
+    <div class="form-group">
+        <label for="mainUrl">Analiz Edilecek URL:</label>
+        <input type="text" class="form-control" id="mainUrl" name="mainUrl" placeholder="https://www.example.com">
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Analizi Başlat</button>
+</form>
